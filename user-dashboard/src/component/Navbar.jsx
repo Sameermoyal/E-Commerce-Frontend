@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { FaCartArrowDown } from "react-icons/fa";
-import { IoIosLogOut } from "react-icons/io";
+import { FaCartArrowDown,FaShoppingBag } from "react-icons/fa";
+import { IoIosLogOut  } from "react-icons/io";
 
 function Navbar() {
   const navigate=useNavigate()
@@ -17,7 +17,7 @@ function Navbar() {
 
       <div className="flex gap-4">
         <Link to="/" className="text-white no-underline font-normal hover:font-bold hover:text-yellow-400">
-          Shop
+          Home
         </Link>
         <Link to="/shop" className="text-white no-underline font-normal hover:font-bold hover:text-yellow-400">
           SHOP
@@ -33,6 +33,9 @@ function Navbar() {
       <div className="flex items-center gap-4">
         <Link to="/cart" className="text-white no-underline hover:text-yellow-400">
           <FaCartArrowDown /> 
+        </Link>
+        <Link to="/trackOrder" className="text-white no-underline hover:text-yellow-400">
+          <FaShoppingBag /> 
         </Link>
         <button onClick={removeToken} className="text-white no-underline hover:text-yellow-400">
         <IoIosLogOut />
