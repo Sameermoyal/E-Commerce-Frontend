@@ -15,6 +15,7 @@ import SellerInfo from './pages/SellerInfo'
 import Cart from './pages/Cart'
 import Order from './pages/Order'
 import TrackOrder from "./pages/TrackOrder"
+import TrackOrderSection from './pages/TrackOrderSection'
 
 function App() {
 const isAuth=()=>{
@@ -42,6 +43,7 @@ const role=localStorage.getItem('role')
       <Route path='/trackOrder' element={<TrackOrder/>} />
       
       <Route path='/additem' element={<AddItem/>} />
+      <Route path='/trackOrderSection' element={<TrackOrderSection/>} />
       <Route path='/updateItem/:userId' element={<UpdateItem/>} />
       <Route path='/productDetails/:productId' element={<ProductDetails/>} />
       <Route path='/sellerInfo/:sellerId' element={<SellerInfo/>} />

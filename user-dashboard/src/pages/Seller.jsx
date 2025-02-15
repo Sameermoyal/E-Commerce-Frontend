@@ -61,7 +61,7 @@ function Seller() {
 
       {isLoading && <p className="text-blue-500 text-center">Loading...</p>}
       {isError && <p className="text-red-500 text-center">Error fetching seller products.</p>}
-
+      <Link to='/trackOrderSection' className='bg-red-400 w-20 ' >Track Order Section</Link>
       {data && data.length > 0 ? (
         
       <div>
@@ -95,6 +95,8 @@ function Seller() {
       )}
 
       <Link to='/additem' className='bg-red-400 w-20 ' >Add +</Link>
+
+       
     </div>
   );
 }
